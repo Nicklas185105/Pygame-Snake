@@ -2,6 +2,7 @@
 
 from core.settings import Settings
 
+# pylint: disable=too-few-public-methods
 class SnakeSettings(Settings):
     """A class to store all settings for the Snake game."""
 
@@ -20,50 +21,3 @@ class SnakeSettings(Settings):
         "score_text": (255, 255, 255),
     }
     SCORE = 0
-
-    def __init__(self):
-        self.game_over_size = 48
-
-        self.snake_direction = 'right'
-        self.snake_x = 0
-        self.snake_y = 0
-
-        self.food_x = 0
-        self.food_y = 0
-
-        self.score = 0
-
-        self.game_over = False
-
-        self.snake_body = []
-        self.snake_body_length = 1
-
-        self.snake_body_positions = []
-
-        self.snake_body_positions.append((self.snake_x, self.snake_y))
-
-        self.snake_body_positions = self.snake_body_positions[-self.snake_body_length:]
-
-        self.snake_body.append((self.snake_x, self.snake_y))
-
-        self.snake_body = self.snake_body[-self.snake_body_length:]
-
-        self.snake_body_positions = self.snake_body_positions[-self.snake_body_length:]
-
-        self.snake_body = self.snake_body[-self.snake_body_length:]
-
-        self.snake_body_positions = self.snake_body_positions[-self.snake_body_length:]
-
-        self.snake_body = self.snake_body[-self.snake_body_length:]
-
-        self.snake_body_positions = self.snake_body_positions[-self.snake_body_length:]
-
-        self.snake_body = self.snake_body[-self.snake_body_length:]
-
-        self.snake_body_positions = self.snake_body_positions[-self.snake_body_length:]
-
-        self.snake_body = self.snake_body[-self.snake_body_length:]
-
-        self.snake_body_positions = self.snake_body_positions[-self.snake_body_length:]
-
-        self.snake_body = self

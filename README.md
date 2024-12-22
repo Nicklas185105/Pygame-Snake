@@ -97,3 +97,4 @@ Contributions are welcome! To contribute:
 2. Create a new branch for your feature or bug fix.
 3. Make your changes.
 4. Submit a pull request.
+5. Run `pylint snake` and try to hit 10/10

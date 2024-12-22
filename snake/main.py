@@ -1,7 +1,7 @@
 """Main module of the game. It initializes the game and runs the main loop."""
 
 from core import Game, SceneManager
-from snake.settings import *
+from snake.settings import SnakeSettings
 from snake.scenes.main_menu import MainMenu
 
 if __name__ == "__main__":

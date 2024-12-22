@@ -10,7 +10,6 @@ from snake.entities.snake import Snake
 from snake.entities.food import Food
 from snake.settings import SnakeSettings
 
-
 class Gameplay(Scene):
     """The Gameplay scene class."""
 
@@ -76,5 +75,6 @@ class Gameplay(Scene):
         self.food.draw(self.screen)
 
         # Render the score
-        score_text = self.font.render(f"Score: {SnakeSettings.SCORE}", True, SnakeSettings.COLORS["score_text"])
+        score_text = self.font.render(f"Score: {SnakeSettings.SCORE}",
+                                        True, SnakeSettings.COLORS["score_text"])
         self.screen.blit(score_text, (10, 10))  # Top-left corner
