@@ -4,11 +4,6 @@ from core import Game, SceneManager
 from snake.settings import SnakeSettings
 from snake.scenes.main_menu import MainMenu
 
-# Set working directory
-# This makes it so that the game can be run from any directory
-import os
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
-
 
 if __name__ == "__main__":
     import pygame

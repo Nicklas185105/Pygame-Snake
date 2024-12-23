@@ -45,7 +45,7 @@ pip install -r requirements.txt
 3. Run the game:
 
    ```bash
-   python snake/main.py
+   python -m snake.main
    ```
 
 ## How to Play
