@@ -4,7 +4,7 @@ import pygame
 # pylint: disable=no-name-in-module
 from pygame.constants import K_RETURN
 # pylint: enable=no-name-in-module
-from core.scene import Scene
+from core import Scene
 from snake.scenes.gameplay import Gameplay
 
 class MainMenu(Scene):

@@ -4,7 +4,7 @@ import pygame
 # pylint: disable=no-name-in-module
 from pygame.constants import K_UP, K_DOWN, K_LEFT, K_RIGHT, K_w, K_s, K_a, K_d
 # pylint: enable=no-name-in-module
-from core.scene import Scene
+from core import Scene
 from core.utils import check_collision
 from snake.entities.snake import Snake
 from snake.entities.food import Food

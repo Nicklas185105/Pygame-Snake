@@ -1,6 +1,6 @@
 """Settings for the Snake game."""
 
-from core.settings import Settings
+from core import Settings
 
 # pylint: disable=too-few-public-methods
 class SnakeSettings(Settings):

@@ -4,6 +4,7 @@ from core import Game, SceneManager
 from snake.settings import SnakeSettings
 from snake.scenes.main_menu import MainMenu
 
+
 if __name__ == "__main__":
     import pygame
     # pylint: disable=no-member
