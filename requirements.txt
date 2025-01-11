@@ -1,2 +1,2 @@
 pygame==2.6.1
-pygame-core>=0.1.2
+polystack-pygame-engine>=2.0.0b0
