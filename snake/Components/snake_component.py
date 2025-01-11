@@ -13,7 +13,7 @@ class SnakeComponent(Component):
         self.score = 0
         self.alive = True
 
-    def update(self):
+    def update(self, delta_time: float):
         if not self.alive:
             return
 

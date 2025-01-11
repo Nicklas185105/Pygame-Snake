@@ -4,12 +4,13 @@ from engine.components import Transform
 
 from snake.Components.snake_component import SnakeComponent
 from snake.ScriptableObjects.food_scriptable_object import FoodScriptableObject
+from snake.scenes.game_over import GameOverScene
 from snake.settings import COLOR_BACKGROUND, COLOR_SNAKE, GRID_SIZE, COLOR_FOOD
 
 
 class GameScene(Scene):
-    def __init__(self):
-        super().__init__("GameScene")
+    def __init__(self, screen: pygame.Surface):
+        super().__init__("GameScene", screen)
 
         # Snake GameObject
         self.snake = GameObject("Snake")
@@ -40,16 +41,16 @@ class GameScene(Scene):
         self.food_transform.position = self.food_script.position
 
     def on_game_over(self):
-        SceneManager.load_scene("GameOverScene")
+        SceneManager.load_scene(GameOverScene(self.canvas.screen))
 
-    def update(self, delta_time):
-        super().update(delta_time)
-        if self.snake_component.alive:
-            self.snake_component.update()
+    # def update(self, delta_time):
+    #     super().update(delta_time)
+        # if self.snake_component.alive:
+        #     self.snake_component.update(delta_time)
 
     def render(self, screen):
         screen.fill(COLOR_BACKGROUND)
-
+        print("hello")
         # Render snake
         for segment in self.snake_component.body:
             pygame.draw.rect(screen, COLOR_SNAKE,
